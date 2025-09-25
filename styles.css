@@ -1,5 +1,126 @@
-body {
-    background-color: #b3b3b3;
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-img { width: 300px}
+/* Menu */
+nav {
+    background: #222;
+    padding: 1em;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover {
+    color: #00bcd4;
+}
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding: 2em 8%;          
+    gap: 1.5em; 
+    max-height: 600px;    
+
+}
+
+.hero-text {
+    flex: 1;
+    color: #333;
+}
+
+.hero-text h1 {
+    font-size: 2em;
+    margin-bottom: 0.4em;
+}
+
+.hero-text p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+.hero-img {
+    flex: 0.4;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-img img {
+    max-width: 200px;
+    height: auto;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    background: #00bcd4;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.btn:hover {
+    background: #008c9e;
+}
+
+/* Projetos */
+.projetos {
+    padding: 2em;
+    background: #ffe6e6;
+}
+.cards {
+    display: flex;
+    gap: 1em;
+    margin-top: 1em;
+}
+.card {
+    background: #fff;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    flex: 1;
+    text-align: center;
+}
+
+/* Disciplinas */
+.disciplinas {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em;
+    gap: 2em;
+}
+.texto {
+    flex: 1;
+}
+.wordcloud {
+    flex: 1;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    margin-top: 2em;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .disciplinas {
+        flex-direction: column;
+    }
+    .hero-text h1 {
+        font-size: 1.5em;
+    }
+}
